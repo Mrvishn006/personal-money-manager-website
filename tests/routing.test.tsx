@@ -37,7 +37,7 @@ describe('Client-Side Routing', () => {
   it('navigates to Download page at /download', () => {
     renderWithRouter('/download');
     expect(screen.getByText('Official Windows Distribution')).toBeInTheDocument();
-    expect(screen.getByText('Personal Money Manager-1.0.0-x64.exe')).toBeInTheDocument();
+    expect(screen.getByText('Personal.Money.Manager-1.0.0-x64.exe')).toBeInTheDocument();
   });
 
   it('navigates to Features page at /features', () => {
