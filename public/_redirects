@@ -1,1 +1,2 @@
-/*    /index.html   200
+# Redirects file
+# SPA routing is handled natively by wrangler.json: assets.not_found_handling = "single-page-application"
