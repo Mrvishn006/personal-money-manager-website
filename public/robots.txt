@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://personalmoneymanager.pages.dev/sitemap.xml
+Sitemap: https://personal-money-manager-website.vishnubandari94.workers.dev/sitemap.xml

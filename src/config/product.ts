@@ -26,7 +26,7 @@ export const productConfig: ProductConfig = {
     'Track expenses, manage money you\'ve lent, monitor repayments, and understand your finances with a personal money manager for Windows.',
   fullDescription:
     'A production-minded, offline-first personal financial management desktop application for Windows 10 and Windows 11 (64-bit). Engineered with 100% local SQLite storage, integer paise accounting integrity, and zero cloud transmission.',
-  websiteUrl: 'https://personalmoneymanager.pages.dev',
+  websiteUrl: 'https://personal-money-manager-website.vishnubandari94.workers.dev',
 
   // Owner settings: Verified GitHub identity
   githubOwner: 'Mrvishn006',
