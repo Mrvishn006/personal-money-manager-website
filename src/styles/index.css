@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 min-h-screen antialiased;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  /* Subtle border & backdrop utilities */
+  .fintech-card {
+    @apply bg-white rounded-xl border border-slate-200/80 shadow-subtle hover:shadow-card transition-all duration-200;
+  }
+
+  .fintech-card-hover {
+    @apply fintech-card hover:border-slate-300 hover:-translate-y-0.5;
+  }
+
+  .badge-neutral {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200;
+  }
+
+  .badge-brand {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-brand-50 text-brand-700 border border-brand-200;
+  }
+
+  .badge-emerald {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200;
+  }
+
+  .badge-amber {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200;
+  }
+
+  .code-block {
+    @apply font-mono text-xs bg-slate-900 text-slate-100 rounded-lg p-3.5 border border-slate-800 overflow-x-auto;
+  }
+}
