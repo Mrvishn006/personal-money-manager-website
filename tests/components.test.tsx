@@ -141,7 +141,7 @@ describe('Layout and Home Components', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('Personal Money Manager-1.0.0-x64.exe')).toBeInTheDocument();
+    expect(screen.getByText('Personal.Money.Manager-1.0.0-x64.exe')).toBeInTheDocument();
     expect(screen.getByText('Windows 10 / Windows 11')).toBeInTheDocument();
     expect(screen.getByText(/SHA-256 Checksum Verification/i)).toBeInTheDocument();
     expect(screen.getByText(/Verified Hash Published/i)).toBeInTheDocument();
@@ -150,7 +150,7 @@ describe('Layout and Home Components', () => {
     const downloadBtn = screen.getByText('Download Installer (.exe)');
     expect(downloadBtn.closest('a')).toHaveAttribute(
       'href',
-      expect.stringContaining('Personal Money Manager-1.0.0-x64.exe')
+      expect.stringContaining('Personal.Money.Manager-1.0.0-x64.exe')
     );
   });
 
@@ -158,7 +158,7 @@ describe('Layout and Home Components', () => {
     render(<VerificationGuide />);
 
     expect(screen.getByText(/Get-FileHash -Path/i)).toBeInTheDocument();
-    expect(screen.getByText(/Personal Money Manager-1.0.0-x64.exe/i)).toBeInTheDocument();
+    expect(screen.getByText(/Personal.Money.Manager-1.0.0-x64.exe/i)).toBeInTheDocument();
   });
 
   it('renders SmartScreenGuide with honest disclosure without advising to disable security', () => {

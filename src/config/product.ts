@@ -35,10 +35,9 @@ export const productConfig: ProductConfig = {
   currentRelease: {
     version: '1.0.0',
     releaseDate: 'October 2026',
-    // Exact installer filename produced by electron-builder configuration:
-    // ${productName}-${version}-${arch}.${ext} => Personal Money Manager-1.0.0-x64.exe
-    installerFilename: 'Personal Money Manager-1.0.0-x64.exe',
-    portableFilename: 'Personal Money Manager-Portable-1.0.0-x64.exe',
+    // Exact installer filename on GitHub release asset:
+    installerFilename: 'Personal.Money.Manager-1.0.0-x64.exe',
+    portableFilename: 'Personal.Money.Manager-Portable-1.0.0-x64.exe',
     fileSizeBytes: 126513286,
     fileSizeFormatted: '120.6 MB',
     // Verified SHA-256 hash calculated from the generated installer artifact:

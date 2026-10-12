@@ -14,7 +14,7 @@ describe('Product Configuration & Release URL Construction', () => {
   it('has verified product name, version, and filename', () => {
     expect(productConfig.productName).toBe('Personal Money Manager');
     expect(productConfig.currentRelease.version).toBe('1.0.0');
-    expect(productConfig.currentRelease.installerFilename).toBe('Personal Money Manager-1.0.0-x64.exe');
+    expect(productConfig.currentRelease.installerFilename).toBe('Personal.Money.Manager-1.0.0-x64.exe');
   });
 
   it('correctly validates configured vs placeholder settings', () => {
@@ -32,14 +32,14 @@ describe('Product Configuration & Release URL Construction', () => {
   it('constructs correct GitHub Releases latest download URL for Mrvishn006', () => {
     const url = getLatestInstallerDownloadUrl(productConfig);
     expect(url).toBe(
-      'https://github.com/Mrvishn006/personal-money-manager/releases/latest/download/Personal Money Manager-1.0.0-x64.exe'
+      'https://github.com/Mrvishn006/personal-money-manager/releases/latest/download/Personal.Money.Manager-1.0.0-x64.exe'
     );
   });
 
   it('constructs versioned download URL', () => {
     const url = getVersionDownloadUrl('1.0.0', productConfig);
     expect(url).toBe(
-      'https://github.com/Mrvishn006/personal-money-manager/releases/download/v1.0.0/Personal Money Manager-1.0.0-x64.exe'
+      'https://github.com/Mrvishn006/personal-money-manager/releases/download/v1.0.0/Personal.Money.Manager-1.0.0-x64.exe'
     );
   });
 
